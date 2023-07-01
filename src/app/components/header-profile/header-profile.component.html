@@ -1,0 +1,11 @@
+<header
+  *ngIf="user"
+  class="text-white d-flex p-4 rounded d-flex justify-content-start align-items-center h-auto"
+>
+  <img
+    [src]="user.profile_image_url"
+    class="rounded-circle img"
+    alt="profile image"
+  />
+  <span class="mx-4 fw-bold fs-2"> {{ user.display_name }}</span>
+</header>

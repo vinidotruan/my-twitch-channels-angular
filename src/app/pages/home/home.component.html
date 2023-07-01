@@ -1,0 +1,11 @@
+<app-header-profile [user]="user"></app-header-profile>
+
+<div class="text-black home-wrapper bg-dark w-100">
+  <ng-container *ngFor="let channel of channels$ | async">
+    <div class="row w-100">
+      <div class="col bg-dark text-white mt-5">
+        {{ channel.broadcaster_name }}
+      </div>
+    </div>
+  </ng-container>
+</div>
